@@ -1,0 +1,184 @@
+<!--DOCTYPE html-->
+<html>
+    <head>
+         <title>LOGIN PAGE</title>                      
+     <style>
+	button{
+	background-color:#C82243;
+	border:none;color:#2D21AE;
+	padding:50px.60px;
+	font-size:80px;
+	}
+        button{
+	background-color:#C82243;
+	border:none;color:#2D21AE;
+	padding:50px.60px;
+	font-size:80px;
+    </style>
+    <script>
+        function validate(){
+        var n=document.getElementById("Name").value;
+       if(n===''||n===null){
+           alert("name Required!");
+           return false;
+       }
+       else if(n.length<5)
+       {
+           alert("Name too short!");
+           return false;
+       }
+       var m=document.getElementById("Address").value;
+       if(m===''||m===null){
+           alert("Address required!");
+           return false;
+       }
+       else if(m.length<6){
+           alert("Address too short");
+           return false;
+       }
+       var land=document.getElementById("Landmark").value;
+       if(land===''||land===null){
+           alert("Landmark Required!");
+           return false;
+       }
+       else if(land.length<5)
+       {
+           alert("Landmark too short!");
+           return false;
+       }
+       var phone=document.getElementById("phone").value;
+       if(phone===''||phone===null){
+           alert("Phone number required!");
+           return false;
+       }
+       else if(isNaN(phone)){
+           alert("Numerics only!");
+           return false;
+       }
+	else if(phone.length!=10){
+		alert("10 digits please");
+		return false;
+	}
+       var email=document.getElementById("email").value;
+       if(email===''||email===null){
+           alert("Email required!");
+           return false;
+       }
+       else if(email.lenght<6){
+           alert("email too short");
+           return false;
+       }
+	var agree=document.getElementById("agree").checked;
+	if(agree!=checked){
+		alert("You must agree");
+		return false;
+	}
+        var u=document.getElementById("username").value;
+        if(u==='akashmanna'||u===null)
+        {
+            alert("Akash, You should not Register again");
+            return false;
+        }
+        else
+        {
+            alert("Welcome");
+            return true;
+        }
+          }
+          if(true)
+              scan u;
+    </script>
+<link rel="stylesheet" href="bootstrap.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <nav class="nav navbar-inverse">
+        <img src="Photons 20160927_102641.jpg"class="img-circle col-sm-1">
+        <div class="container">
+            <div class="navbar-header">
+                <label class="navbar-brand">&copy;PHOTONS</label>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="help_photons.html">HELP</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="login_photon.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>        
+</head>
+<body background="thumb-1920-94135.jpg">
+    <div class="container">
+        <form class="form group"action="#">
+            <h4>
+                <marquee behaviour="alternate">
+                    <font face="ALGERIAN" color="#B40431">
+                    <u>
+                        Form of Restaurant(created by photons&trade;)
+                    </u>
+                    </font>
+                </marquee>
+            </h4>
+            <form action="#"name="form">
+            <div class="form-group">
+                <table>
+                    <tr>
+                        <th>
+                            <div class="form-group">
+                                <h3>
+                                    <font face="CooperBlack"color="#B40431">
+                                    Name-
+                                </th>
+                                <th>
+                                    <input type="text"id="Name"placeholder="Name"style="color:#ff3030;font-size:18px;font:Forte;"/>
+                                </th>
+                                </font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Address-</td><td><input type="textarea"id="Address"placeholder="Address"style="color:#ff3030;font-size:20px;font:Forte;"/></td></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Landmark-</td><td><input type="text"id="Landmark"placeholder="Landmark"style="color:#ff3030;font-size:20px;font:Forte;"/></td></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Phone number-</td><td><input type="text"id="phone"placeholder="Phone number"style="color:#ff3030;font-size:20px;font:Forte;"/></td></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Email address-</td><td><input type="email"id="email"placeholder="Email address"name="email"style="color:#ff3030;font-size:20px;font:Forte;"/></td><span id="emailid"></span></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Username</td><td><input type="text"id="username"placeholder="username"style="color:#ff3030;font-size:20px;font:Forte;"/></td></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Password</td><td><input type="password"id="Password"placeholder="Password"style="color:#ff3030;font-size:20px;font:Forte;"/></td></font></h3></div></tr><br/>
+                <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Food-<select name="Food"style="color:#ff3030;font-size:20px;font:Forte;"></font></h3></div><br/>
+                        <option value=" ">Choose</option>
+                        <option value="1">Indian</option>
+                        <option value="2">Chinese</option>
+                        <option value="3">Italian</option>
+                        <option value="4">South Indian</option>
+                    </select></td></tr>
+                    <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431">Feature-<select name="Feature"></font></h3></div></td></tr><br/>
+                          <option value="1">Parking Area</option>
+                        <option value="2">Room Service</option>
+                        <option value="3">Playing Yard</option>
+                        <option value="4">Spa</option>
+                        <option value="5">Swimming Pool</option>
+                        </select>
+                    <!--<tr><td><input type="checkbox"style="color:#ff3030;font-size:18px;font:Forte;"/>Parking area</td></tr><br/>
+                    <tr><td><input type="checkbox"style="color:#ff3030;font-size:18px;font:Forte;"/>Room service</td></tr><br/>
+                    <tr><td><input type="checkbox"style="color:#ff3030;font-size:18px;font:Forte;"/>Playing yard</td></tr><br/>
+                    <tr><td><input type="checkbox"style="color:#ff3030;font-size:18px;font:Forte;"/>Spa</td></tr><br/>
+                    <tr><td><input type="checkbox"style="color:#ff3030;font-size:18px;font:Forte;"/>Swimming pool</td></tr><br/>-->
+                      
+                    
+                    <tr><td><div class="form-group"><h3><font face="CooperBlack"color="#B40431"><input type="checkbox"id="agree"name="Agree"value="I Agree"style="color:#ff3030;font-size:18px;font:Forte;"/>I Agree with terms and conditions</font></h3></div></td></tr><br/>
+                    <tr><td><div class="form-group"><a href="view_photon.html"/><input type="button"class="btn btn-success"value="Submit"onclick="return validate()"/></a></td>
+                    <td><input type="reset"class="btn btn-danger"value="Reset"/></div></td></tr>
+                </table>
+            </div>
+            </form>
+         </form>
+         <nav class="nav navbar-inverse">
+            <div class="container">
+            <div class="navbar-header">
+                <label class="navbar-brand">Header</label>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">&copy;Photons&trade;</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="notepad.exe">Notepad</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

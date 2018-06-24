@@ -1,0 +1,116 @@
+<!The HTML file for the Login page of Jivejol- A Project by Photons>
+<!DOCType HTML>
+<html>
+    <head>
+	<link rel="stylesheet" href="bootstrap.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script>
+			function validate()
+			{
+				var u=document.getElementById("username").value;
+				var p=document.getElementById("password").value;
+				if(u.length<1)
+				{
+					alert("username too short!");
+					return false;
+				}
+				else if(p.length<1)
+				{
+					alert("password too short!");
+					return false;
+				}
+				else if(u==='akashmanna'&&p==='IamAkash')
+				{
+					alert("Welcome Akki!");
+					return true;
+				}
+				else if(u==='arindam'&&p==='8370820651')
+				{
+					alert("Welcome Arindam!");
+					return true;
+				}
+				else if(u==='chandrachur'&&p==='chandra')
+				{
+					alert("Welcome Chandra!");
+					return true;
+				}
+				else if(u==='ditipriya'&&p==='9564490243')
+				{
+					alert("Welcome Ditipriya!");
+					return true;
+				}
+				else if(u==='biswajit'&&p==='9749033899')
+				{
+					alert("Welcome Biswajit");
+					return true;
+				}
+				else if(u==='nitasarkar'&&p==='9851345534')
+				{
+					alert("Welcome Nita!");
+					return true;
+				}
+				else if(u==='bidisha'&&p==='IamBidisha')
+				{
+					alert("Welcome Cutex");
+					return true;
+				}
+				else
+				{
+					alert("Sorry! You are not Authorized!");
+					return false;
+				}
+			}
+        </script>
+        <background image="Photons 20160927_102641.jpg"/>
+        <title>LOGIN PAGE</title>
+        <nav class="nav navbar-inverse">
+			<img src="Photons 20160927_102641.jpg" class="img-circle col-sm-1"/>
+			<div class="container">
+				<div class="navbar-header">
+					<label class="navbar-brand">&copy;PHOTONS</label>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="help_photons.html">HELP</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="index.html">Back to Home</a></li>
+				</ul>
+			</div>
+		</nav>
+    </head>
+	<body background="thumb-1920-94135.jpg">
+        <div class="container">
+            <form class="form group"action="#">
+            <table align="default"style="margin-left:150px; margin-top:40%">
+                <tr>
+                    <td> <div class="form-group">
+                        <input type="text" Id="username" placeholder="username" class="form-control"/><br/>
+                        <input type="password" Id="password" placeholder="password" class="form-control"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+							<a href="team_photons.html"><input type="button"class="btn btn-success"value="Submit"onclick="return validate();"/></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+            <nav class="nav navbar-slim">
+            <div class="container">
+            <div class="navbar-header">
+                <label class="navbar-brand">Fuck Off</label>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">&copy;Photons&trade;</a></li>
+                <li><a href="#">about us</a></li>
+            </ul>
+        </div>
+    </nav>
+        </div>
+    </body>
+</html>

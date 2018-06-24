@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Place Order</title>
+        <script>
+           function validate(){
+            var i=document.getElementById("idli").checked;
+            var d=document.getElementById("dosa").checked;
+            var w=document.getElementById("wada").checked;
+            var u=document.getElementById("upma").checked;
+            var s=document.getElementById("uttapam").checked;
+            if((i===null)&&(d===null)&&(w===null)&&(u===null)&&(s===null)){
+                alert("Order something please!");
+                return false;
+            }
+           }    
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <script src="bootstrap.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <style>
+            .back {
+                background-image: url("421545.jpg");
+                position:relative;
+                padding:0;
+                margin:0;
+                height:600px;
+                background-repeat:no-repeat;
+                background-size:100% 700px;
+                background-position: bottom center;
+                background-attachment:fixed;
+                width: 100%; 
+            }
+        </style>
+         <nav class="nav navbar-inverse">
+        <img src="Photons 20160927_102641.jpg"class="img-circle col-sm-1">
+        <div class="container">
+            <div class="navbar-header">
+                <label class="navbar-brand">&copy;PHOTONS</label>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="help_photons.html">HELP</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="login_photon.html">Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>      
+    </head>
+    <body class="back">
+       
+        <table border="1" style="width: 100%">
+
+            <tr>
+            <td style="height: 500px">
+                <table style="width: 100%; height: 440px" border="1">
+                    <tr>
+                        <td style="width: 100%">
+                            
+                            <img src="Photons 20160927_102641.jpg"class="img-default col-sm-5"><font face="Ariel"color="blue"size="5px">          
+            &copy;PHOTONS</font>
+                            
+                        </td>
+                        <td style="width: 85%">
+                            <pre>
+                                    <font face="Forte"color="#B40431"size="20px">Jive Jol</font>
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%">
+                            <pre>
+<font face="Forte"color="red"size="4px"><b>Welcome to the new portfolio of Jive Jol Hotel.<br/>Explore the world of Food and culinary in a whole new way.<br/>BE HAPPY and STAY HUNGRY!<br/></b></font>
+                                    
+                            </pre>
+                        </td>
+                        <td style="width: 85%">
+                            <div class="col-md-5">
+                                <form class="form-group">
+                                        <table>
+                                            
+                                            <tr>
+                                                
+                                                <td>
+                                                    <pre>     
+                                                    <h3>
+              <font face="Ariel"color="red">You have chosen South Indian dishes. 
+                               U have the mentioned options. Please select at least one:
+                                            <input type="checkbox" id="idli" value="Idli"/> Idli
+                                            <input type="checkbox" id="dosa" value="Dosa"/> Dosa
+                                            <input type="checkbox" id="wada" value="Wada"/> Wada
+                                            <input type="checkbox" id="upma" value="Upma"/> Upma
+                                            <input type="checkbox" id="uttapam" value="uttapam"/> Uttapam</font>
+                                                      </h3>
+                                                    </pre>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="thankyou.html"/><input type="button" value="Order!" class="btn btn-success"onclick="return validate())"/></a>
+                                                    <input type="reset" value="Stop" class="btn btn-danger"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+</form>
+                            
+                                </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width:20%;height:400px;color:#f2dede">
+                    One of the most important things we’ve been working on over the past year is making the process of online food ordering and delivery as simple and hassle-free as possible. While there are some aspects that we think we’ve done well at – bringing customers the widest choice of restaurants in the country, and building a personalised and incredibly easy-to-use app – there are some areas that have immense room for improvement, the most significant one being delivery tracking.
+            </td>
+        </tr>
+
+    </table>
+    <table>
+        <tr>
+        <nav class="nav navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <label class="navbar-brand">&copy; Hello</label>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="login_photon.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </tr>
+</table>
+</body>
+</html>
